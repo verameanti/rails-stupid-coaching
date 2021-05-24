@@ -1,0 +1,25 @@
+<!-- < class="banner">Stupid Coaching</h1>
+<p>---------------------------------------------------</p>
+<p><%= params[:answer]%></p>
+<p>You</p>
+<br>
+<p><%= @response %></p>
+<p>Coach</p>
+<br>
+<br> -->
+
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <blockquote class=question>
+    <%= @question %>
+    <p>-You</p>
+  </blockquote>
+
+  <blockquote class="answer">
+    <%= @response %>
+    <p>-Your Coach</p>
+  </blockquote>
+</div>
+
+<%= link_to'Ask a new question', ask_path %>
+
